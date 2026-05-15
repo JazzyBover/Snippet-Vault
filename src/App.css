@@ -171,3 +171,27 @@ body {
   background:  #52526d;
 }
 
+.snippet-content h3 {
+  color: white;
+  font-size: 15px;
+}
+
+.snippet-content p {
+  color: gray;
+  font-size: 12px;
+}
+
+.snippet-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #1e1e1e;
+  border-radius: 10px;
+
+  color: white;
+}
+
