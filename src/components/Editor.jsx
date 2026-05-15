@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 const Editor = ({ addSnippet, selectedSnippet, setSelectedSnippet }) => {                                                         
   const [title, setTitle] = useState('');
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState('React');
   const [code, setCode] = useState('');
 
   useEffect(() => {

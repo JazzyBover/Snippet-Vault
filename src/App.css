@@ -11,14 +11,12 @@ body {
 }
 
 /* APP LAYOUT */
-
 .app {
   display: flex;
   height: 100vh;
 }
 
 /* SIDEBAR */
-
 .middle {
   width: 320px;
   background: #021826;
