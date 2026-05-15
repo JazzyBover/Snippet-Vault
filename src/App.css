@@ -40,11 +40,11 @@ body {
   padding: 14px;
   border: none;
   outline: none;
-  border-radius: 10px;
-  background: #08263b;
+  border-radius: 8px;
+  background: #0c212e;
   color: white;
   margin-bottom: 18px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 /* SECTION TITLE */
@@ -93,15 +93,15 @@ body {
 /* TITLE */
 
 .title-input {
-  width: 260px;
+  width: 250px;
   padding: 12px;
   border: none;
   outline: none;
   border-radius: 6px;
   background: #1f1f2e;
   color: white;
-  font-size: 18px;
-  margin-bottom: 15px;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
 
@@ -151,7 +151,7 @@ body {
 
 /* MIDDLE PANEL */
 .middle {
-  width: 290px;
+  width: 260px;
   background: #06141B;
   padding: 15px;
   display: flex;
@@ -160,7 +160,7 @@ body {
 }
 
 .save-btn {
-  background: #364760;
+  background:  #252537;
   border: none;
   color: white;
   padding: 10px 16px;
@@ -170,6 +170,6 @@ body {
 }
 
 .save-btn:hover {
-  background: #5f7586;
+  background:  #52526d;;
 }
 

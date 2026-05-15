@@ -10,8 +10,6 @@ const SearchBar = ({ search, setSearch }) => {
         placeholder="Type Here..."
         value={search}
         onChange={(e) => setSearch(e.target.value)} />
-        <button className="search" onclick="searchSnippets()">Search</button>
-        <button className="search" onclick="searchSnippets()">Clear</button>
       
     </>
   );

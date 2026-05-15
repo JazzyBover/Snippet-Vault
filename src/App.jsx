@@ -7,6 +7,8 @@ import "./App.css";
 
 const App = () =>  {
 
+  const [selectedSnippet, setSelectedSnippet] = useState(null);
+
   const [snippets, setSnippets] = useState(() => {
     return JSON.parse(localStorage.getItem("snippets")) || [ ];                                 //Load snippets from localStorage on initial render
     } );   
@@ -19,6 +21,12 @@ const App = () =>  {
    const addSnippet = (newSnippet) => {
     setSnippets([...snippets, newSnippet]);                                                        //Add new snippet to state
   };
+
+  const deleteSnippet = (indexToDelete) => {
+  setSnippets(
+    snippets.filter((_, index) => index !== indexToDelete)
+  );
+};
 
   const filteredSnippets = snippets.filter((val) => {
     return (
@@ -37,7 +45,7 @@ const App = () =>  {
 
         <p className="section-title">SNIPPETS</p>
 
-        <SnippetList snippets={filteredSnippets} />
+        <SnippetList snippets={filteredSnippets}  setSelectedSnippet={setSelectedSnippet}  deleteSnippet={deleteSnippet}/>
 
       </div>
 
@@ -50,7 +58,7 @@ const App = () =>  {
 
         </div>
 
-        <Editor addSnippet={addSnippet} />
+        <Editor addSnippet={addSnippet}  selectedSnippet={selectedSnippet}  setSelectedSnippet={setSelectedSnippet}/>
 
       </div>
 

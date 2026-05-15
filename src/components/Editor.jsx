@@ -1,13 +1,26 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
-const Editor = ({addSnippet}) => {                                                         
+const Editor = ({ addSnippet, selectedSnippet, setSelectedSnippet }) => {                                                         
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
   const [code, setCode] = useState('');
 
+  useEffect(() => {
+    if (!selectedSnippet) return;
+      setTitle(selectedSnippet.title);
+      setCategory(selectedSnippet.category);
+      setCode(selectedSnippet.code);
+   
+  }, [selectedSnippet]);  
+
   const handleSubmit = (e) => {
-  e.preventDefault();                                                                         
+  e.preventDefault();   
+  
+  if (!title || !category || !code) {
+    return;
+  }
+
   const snippet = {
     title,
     category,
@@ -16,7 +29,9 @@ const Editor = ({addSnippet}) => {
   addSnippet(snippet);                                                                       //Pass new snippet to parent component
   setTitle('');        
   setCategory('');   
-  setCode('');                       }     
+  setCode('');   
+
+  setSelectedSnippet(null); };
 
   return (
     <>
