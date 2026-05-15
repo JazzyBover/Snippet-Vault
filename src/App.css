@@ -149,7 +149,7 @@ body {
 
 /* MIDDLE PANEL */
 .middle {
-  width: 260px;
+  width: 350px;
   background: #06141B;
   padding: 15px;
   display: flex;
@@ -171,27 +171,39 @@ body {
   background:  #52526d;
 }
 
-.snippet-content h3 {
-  color: white;
-  font-size: 15px;
+
+
+
+.snippet-item{
+  display:flex;
+  gap:10px;
+  padding:10px;
+  margin-bottom:8px;
+  background:#243447;
+  border-radius:10px;
 }
 
-.snippet-content p {
-  color: gray;
-  font-size: 12px;
+.snippet-icon{
+  width:25px;
+  height:25px;
+  display:grid;
+  place-items:center;
+  background:#111;
+  border-radius:5px;
+  color:#fff;
+  font-size:18px;
 }
 
-.snippet-icon {
-  width: 40px;
-  height: 40px;
+.snippet-content{flex:1;}
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.snippet-content h3{color:#fff;font-size:12px;}
+.snippet-content p{color:#aaa;font-size:10px;}
 
-  background: #1e1e1e;
-  border-radius: 10px;
-
-  color: white;
+.delete-btn{
+  cursor: pointer;
+  
+   font-size:15px;
+  background:none;
+  border:none;
+  color:#aaa;
 }
-
