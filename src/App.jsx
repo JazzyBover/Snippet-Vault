@@ -38,30 +38,20 @@ const App = () =>  {
     <div className="app">
       {/* LEFT SIDE */}
       <div className="middle">
-        <h1 className="logo">SnippetVault</h1>
-        <SearchBar
-          search={search}
-          setSearch={setSearch}                         />
-
+        <h1 className="logo" onClick={() => window.location.reload()}>SnippetVault</h1>
+        <SearchBar search={search}  setSearch={setSearch} />
         <p className="section-title">SNIPPETS</p>
-
         <SnippetList snippets={filteredSnippets}  setSelectedSnippet={setSelectedSnippet}  deleteSnippet={deleteSnippet}/>
-
       </div>
 
       {/* RIGHT SIDE */}
       <div className="editor">
-
         <div className="editor-header">
           <div className="editor-actions">
-          </div>
-
-        </div>
-
-        <Editor addSnippet={addSnippet}  selectedSnippet={selectedSnippet}  setSelectedSnippet={setSelectedSnippet}/>
-
-      </div>
-
+            </div>
+            </div>
+            <Editor addSnippet={addSnippet}  selectedSnippet={selectedSnippet}  setSelectedSnippet={setSelectedSnippet}/>
+            </div>
     </div>
   );
 }
