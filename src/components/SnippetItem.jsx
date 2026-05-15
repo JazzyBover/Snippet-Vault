@@ -19,7 +19,7 @@ const SnippetItem = ({ item, onDelete, setSelectedSnippet }) => (
       <h3>{item.title}</h3>
       <p>{item.category}</p>
     </div>      
-     <button className="delete-btn" onClick={onDelete}> ✕ </button>
+     <button className="delete-btn" onClick={onDelete}> ✖ </button>
     </div>
     )
 

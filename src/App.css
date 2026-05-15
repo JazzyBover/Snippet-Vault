@@ -171,9 +171,6 @@ body {
   background:  #52526d;
 }
 
-
-
-
 .snippet-item{
   display:flex;
   gap:10px;
@@ -191,19 +188,20 @@ body {
   background:#111;
   border-radius:5px;
   color:#fff;
-  font-size:18px;
+  font-size:15px;
 }
 
 .snippet-content{flex:1;}
-
 .snippet-content h3{color:#fff;font-size:12px;}
 .snippet-content p{color:#aaa;font-size:10px;}
 
 .delete-btn{
-  cursor: pointer;
-  
-   font-size:15px;
+  cursor: pointer;  
+  font-size:15px;
   background:none;
   border:none;
   color:#aaa;
+}
+.delete-btn:hover{
+  color:red;
 }

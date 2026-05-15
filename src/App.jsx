@@ -38,7 +38,7 @@ const App = () =>  {
     <div className="app">
       {/* LEFT SIDE */}
       <div className="middle">
-        <h1 className="logo">Snippet Vault</h1>
+        <h1 className="logo">SnippetVault</h1>
         <SearchBar
           search={search}
           setSearch={setSearch}                         />
